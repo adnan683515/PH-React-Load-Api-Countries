@@ -1,6 +1,6 @@
 import React, { use } from 'react';
 import Country from '../Country/Country';
-
+import './app.css'
 
 const Countries = ({ countriesPromies }) => {
 
@@ -12,11 +12,7 @@ const Countries = ({ countriesPromies }) => {
                 textAlign: "center"
             }}>Traveling Countries: {data.length} </h1>
 
-            <div style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                gap: "16px"
-            }} >
+            <div className='countryContainer' >
 
 
                 {
